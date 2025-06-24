@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Service
 public class PaymentService {
@@ -31,4 +32,23 @@ public class PaymentService {
   }
 
 
+    public void deletePayment(Long id) {
+        repo.findById(id)
+                .ifPresentOrElse(repo::delete, () -> {
+                    throw new RuntimeException("Payment not found");
+                });
+    }
+
+    public Payment getById(Long id) {
+        return repo.findById(id)
+                .orElseThrow(() -> new RuntimeException("Payment not found"));
+    }
+
+    public List<Payment> getAllPayments() {
+        List<Payment> payments = repo.findAll();
+        if (payments.isEmpty()) {
+            throw new RuntimeException("No payments found");
+        }
+        return payments;
+    }
 }

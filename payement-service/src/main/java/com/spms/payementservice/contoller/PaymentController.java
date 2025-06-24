@@ -21,23 +21,25 @@ public class PaymentController {
 
     @GetMapping("/{id}")
     public Payment get(@PathVariable Long id) {
-        return service.repo.findById(id).orElseThrow();
+        return service.getById(id);
     }
 
     @GetMapping("/all")
     public List<Payment> all() {
-        return service.repo.findAll();
+        return service.getAllPayments();
     }
 
     @PutMapping("/update/{id}")
     public Payment update(@PathVariable Long id, @RequestBody Payment updated) {
         return service.update(id, updated);
     }
+
     @DeleteMapping("/delete/{id}")
     public String delete(@PathVariable Long id) {
-        service.repo.deleteById(id);
+        service.deletePayment(id);
         return "Payment deleted successfully.";
     }
+
     @PostMapping("/validate")
     public String validate(@RequestBody Payment payment) {
         if (payment.getCardNumber() == null || payment.getCardNumber().isEmpty()) {
@@ -52,9 +54,5 @@ public class PaymentController {
     @PostMapping("/receipt")
     public String generateReceipt(@RequestBody Payment payment) {
         return "Receipt generated for payment ID: " + payment.getId() + " with amount: " + payment.getAmount();
-
     }
-
-
-
 }

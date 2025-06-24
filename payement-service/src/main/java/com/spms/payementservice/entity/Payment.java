@@ -15,13 +15,17 @@ public class Payment {
     private double amount;
     private String status;
     private LocalDateTime timestamp;
+    private String vehicleId; // Added missing property
 
-//
-//    private String userId;
-//
-//    public String getUserId() { return userId; }
-//    public void setUserId(String userId) { this.userId = userId; }
+    // Uncomment if you need userId as well
+    private String userId;
 
+    public String getUserId() { return userId; }
+    public void setUserId(String userId) { this.userId = userId; }
+
+    // Add getter and setter for vehicleId
+    public String getVehicleId() { return vehicleId; }
+    public void setVehicleId(String vehicleId) { this.vehicleId = vehicleId; }
 
     public Payment() {
     }
@@ -66,13 +70,15 @@ public class Payment {
         this.timestamp = timestamp;
     }
 
-    public Payment(Long id, String cardNumber, double amount, String status, LocalDateTime timestamp) {
+    // Updated constructor to include vehicleId and userId
+    public Payment(Long id, String cardNumber, double amount, String status, LocalDateTime timestamp,
+                   String vehicleId, String userId) {
         this.id = id;
         this.cardNumber = cardNumber;
         this.amount = amount;
         this.status = status;
         this.timestamp = timestamp;
+        this.vehicleId = vehicleId;
+        this.userId = userId;
     }
 }
-
-
