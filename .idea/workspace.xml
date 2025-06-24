@@ -4,7 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4fbf97d-62c8-4afb-a5d5-6d77ff47c9a4" name="Changes" comment="" />
+    <list default="true" id="b4fbf97d-62c8-4afb-a5d5-6d77ff47c9a4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api-Gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Api-Gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-services/src/main/java/com/spms/userservices/UserServicesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-services/src/main/java/com/spms/userservices/UserServicesApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-services/src/main/java/com/spms/userservices/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-services/src/main/java/com/spms/userservices/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-services/src/main/java/com/spms/userservices/entity/AppUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-services/src/main/java/com/spms/userservices/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-services/src/main/java/com/spms/userservices/repo/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-services/src/main/java/com/spms/userservices/repo/UserRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-services/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/User-services/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-services/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/User-services/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/java/com/spms/configserver/ConfigServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/java/com/spms/configserver/ConfigServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/java/com/spms/eurekaserver/EurekaServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/java/com/spms/eurekaserver/EurekaServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parking-space-service/src/main/java/com/spms/parkingspaceservice/ParkingSpaceServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/parking-space-service/src/main/java/com/spms/parkingspaceservice/ParkingSpaceServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parking-space-service/src/main/java/com/spms/parkingspaceservice/controller/ParkingSpaceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/parking-space-service/src/main/java/com/spms/parkingspaceservice/controller/ParkingSpaceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parking-space-service/src/main/java/com/spms/parkingspaceservice/entity/ParkingSpace.java" beforeDir="false" afterPath="$PROJECT_DIR$/parking-space-service/src/main/java/com/spms/parkingspaceservice/entity/ParkingSpace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parking-space-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/parking-space-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payement-service/src/main/java/com/spms/payementservice/PayementServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/payement-service/src/main/java/com/spms/payementservice/PaymentServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payement-service/src/main/java/com/spms/payementservice/contoller/PayementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/payement-service/src/main/java/com/spms/payementservice/contoller/PaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payement-service/src/main/java/com/spms/payementservice/entity/Payement.java" beforeDir="false" afterPath="$PROJECT_DIR$/payement-service/src/main/java/com/spms/payementservice/entity/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payement-service/src/main/java/com/spms/payementservice/service/PayementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/payement-service/src/main/java/com/spms/payementservice/service/PaymentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payement-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/payement-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payement-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/payement-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-service/src/main/java/com/spms/vehicleservice/VehicleServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-service/src/main/java/com/spms/vehicleservice/VehicleServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-service/src/main/java/com/spms/vehicleservice/controller/VehicleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-service/src/main/java/com/spms/vehicleservice/controller/VehicleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-service/src/main/resources/application.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,6 +75,21 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "MaleeshaMAdhushanka"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/MaleeshaMAdhushanka/Smart-Parking-Management-System.git",
+    "accountId": "4cdd760d-2b60-48d1-8fa2-e13a1807f79b"
+  }
+}]]></component>
   <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
   <component name="KubernetesApiProvider"><![CDATA[{
   "isMigrated": true
@@ -63,7 +104,25 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.ConfigServerApplication.executor": "Run",
+    "Application.EurekaServerApplication.executor": "Run",
+    "Application.ParkingSpaceServiceApplication.executor": "Run",
+    "Application.UserServicesApplication.executor": "Run",
+    "Application.VehicleServiceApplication.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.ApiGatewayApplication.executor": "Run",
+    "Spring Boot.ConfigServerApplication (1).executor": "Run",
+    "Spring Boot.ConfigServerApplication.executor": "Run",
+    "Spring Boot.EurekaServerApplication.executor": "Run",
+    "Spring Boot.ParkingSpaceServiceApplication.executor": "Run",
+    "Spring Boot.PaymentServiceApplication.executor": "Run",
+    "Spring Boot.UserServicesApplication.executor": "Run",
+    "Spring Boot.VehicleServiceApplication.executor": "Run",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -74,6 +133,9 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -83,8 +145,84 @@
         <option value="SpringBootApplicationConfigurationType" />
       </set>
     </option>
+    <option name="hiddenConfigurations">
+      <map>
+        <entry key="SpringBootApplicationConfigurationType">
+          <value>
+            <set>
+              <option value="UserServiceApplication" />
+            </set>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.EurekaServerApplication">
+  <component name="RunManager" selected="Spring Boot.VehicleServiceApplication">
+    <configuration name="ConfigServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.spms.configserver.ConfigServerApplication" />
+      <module name="config-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spms.configserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.spms.eurekaserver.EurekaServerApplication" />
+      <module name="eureka-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spms.eurekaserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParkingSpaceServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.spms.parkingspaceservice.ParkingSpaceServiceApplication" />
+      <module name="parking-space-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spms.parkingspaceservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServicesApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.spms.userservices.UserServicesApplication" />
+      <module name="User-services" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spms.userservices.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VehicleServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.spms.vehicleservice.VehicleServiceApplication" />
+      <module name="vehicle-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spms.vehicleservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="Api-Gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.spms.apigateway.ApiGatewayApplication" />
@@ -120,9 +258,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PayementServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <configuration name="PaymentServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="payement-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.spms.payementservice.PayementServiceApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.spms.payementservice.PaymentServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -148,6 +286,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.UserServicesApplication" />
+        <item itemvalue="Application.ConfigServerApplication" />
+        <item itemvalue="Application.EurekaServerApplication" />
+        <item itemvalue="Application.VehicleServiceApplication" />
+        <item itemvalue="Application.ParkingSpaceServiceApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -165,7 +312,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1750745710003</updated>
-      <workItem from="1750745711191" duration="2767000" />
+      <workItem from="1750745711191" duration="6184000" />
     </task>
     <servers />
   </component>
