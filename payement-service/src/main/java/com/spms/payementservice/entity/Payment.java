@@ -16,6 +16,13 @@ public class Payment {
     private String status;
     private LocalDateTime timestamp;
 
+//
+//    private String userId;
+//
+//    public String getUserId() { return userId; }
+//    public void setUserId(String userId) { this.userId = userId; }
+
+
     public Payment() {
     }
 
