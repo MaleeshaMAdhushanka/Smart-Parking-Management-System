@@ -15,7 +15,7 @@ A ready-to-use Postman collection is provided for testing and exploring the APIs
 - [Smart Parking System Postman Collection](Smart-Parking-System.postman_collection.json)
 
 
-  ![Eureka Server Screenshot](Api caling.png)
+![Eureka Server Screenshot](Api%20caling.png)
 
 
 ## Getting Started
