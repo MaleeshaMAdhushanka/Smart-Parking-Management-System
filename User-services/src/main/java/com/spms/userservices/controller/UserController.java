@@ -34,7 +34,7 @@ public class UserController {
         return service.repo.findAll();
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("delete/{id}")
     public String delete(@PathVariable Long id) {
         service.repo.deleteById(id);
         return "User deleted successfully.";

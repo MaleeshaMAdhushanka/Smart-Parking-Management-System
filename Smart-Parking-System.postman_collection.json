@@ -1,0 +1,457 @@
+{
+	"info": {
+		"_postman_id": "6ebf4a56-51b8-4db9-b587-9ab84ca54860",
+		"name": "Smart-Parking-System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User-service",
+			"item": [
+				{
+					"name": "get-all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/api/v1/users/all",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "8083",
+							"path": ["api", "v1", "users", "all"]
+						}
+					},
+					"response": [
+						{
+							"code": 200,
+							"body": "[{\"id\":1,\"name\":\"John Doe\",\"email\":\"john@example.com\"}]",
+							"header": [{"key": "Content-Type", "value": "application/json"}]
+						}
+					]
+				},
+				{
+					"name": "register-user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\":\"New User\",\"email\":\"newuser@example.com\"}",
+							"options": {"raw": {"language": "json"}}
+						},
+						"url": {
+							"raw": "http://localhost:8083/api/v1/users/register",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "8083",
+							"path": ["api", "v1", "users", "register"]
+						}
+					},
+					"response": [
+						{
+							"code": 200,
+							"body": "{\"message\":\"User registered successfully\",\"user\":{\"id\":2,\"name\":\"New User\",\"email\":\"newuser@example.com\"}}",
+							"header": [{"key": "Content-Type", "value": "application/json"}]
+						}
+					]
+				},
+				{
+					"name": "update-user",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\":\"John Doe Updated\",\"email\":\"john@example.com\"}",
+							"options": {"raw": {"language": "json"}}
+						},
+						"url": {
+							"raw": "http://localhost:8083/api/v1/users/1",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "8083",
+							"path": ["api", "v1", "users", "1"]
+						}
+					},
+					"response": [
+						{
+							"code": 200,
+							"body": "{\"message\":\"User updated successfully\",\"user\":{\"id\":1,\"name\":\"John Doe Updated\",\"email\":\"john@example.com\"}}",
+							"header": [{"key": "Content-Type", "value": "application/json"}]
+						}
+					]
+				},
+				{
+					"name": "delete-user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/api/v1/users/delete/1",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "8083",
+							"path": ["api", "v1", "users", "delete", "1"]
+						}
+					},
+					"response": [
+						{
+							"code": 200,
+							"body": "{\"message\":\"User deleted successfully\"}",
+							"header": [{"key": "Content-Type", "value": "application/json"}]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Payment-Services",
+			"item": [
+				{
+					"name": "get-all-payments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/payments/all",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "8081",
+							"path": ["api", "v1", "payments", "all"]
+						}
+					},
+					"response": [
+						{
+							"code": 200,
+							"body": "[{\"id\":1,\"cardNumber\":\"1234-5678-9012-3456\",\"amount\":100.0,\"status\":\"PAID\",\"timestamp\":\"2024-07-01T10:00:00\",\"vehicleId\":\"V123\",\"userId\":\"U123\"}]",
+							"header": [{"key": "Content-Type", "value": "application/json"}]
+						}
+					]
+				},
+				{
+					"name": "pay",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"cardNumber\":\"1234-5678-9012-3456\",\"amount\":100.0,\"vehicleId\":\"V123\",\"userId\":\"U123\"}",
+							"options": {"raw": {"language": "json"}}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/payments/pay",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "8081",
+							"path": ["api", "v1", "payments", "pay"]
+						}
+					},
+					"response": [
+						{
+							"code": 200,
+							"body": "{\"id\":2,\"cardNumber\":\"1234-5678-9012-3456\",\"amount\":100.0,\"status\":\"PAID\",\"timestamp\":\"2024-07-01T10:05:00\",\"vehicleId\":\"V123\",\"userId\":\"U123\"}",
+							"header": [{"key": "Content-Type", "value": "application/json"}]
+						}
+					]
+				},
+				{
+					"name": "validate-payment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"cardNumber\":\"1234-5678-9012-3456\",\"amount\":100.0}",
+							"options": {"raw": {"language": "json"}}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/payments/validate",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "8081",
+							"path": ["api", "v1", "payments", "validate"]
+						}
+					},
+					"response": [
+						{
+							"code": 200,
+							"body": "{\"message\":\"Payment validated successfully\"}",
+							"header": [{"key": "Content-Type", "value": "application/json"}]
+						}
+					]
+				},
+				{
+					"name": "update-payment",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"cardNumber\":\"1234-5678-9012-3456\",\"amount\":120.0,\"status\":\"PAID\",\"vehicleId\":\"V123\",\"userId\":\"U123\"}",
+							"options": {"raw": {"language": "json"}}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/payments/update/1",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "8081",
+							"path": ["api", "v1", "payments", "update", "1"]
+						}
+					},
+					"response": [
+						{
+							"code": 200,
+							"body": "{\"message\":\"Payment updated successfully\",\"payment\":{\"id\":1,\"cardNumber\":\"1234-5678-9012-3456\",\"amount\":120.0,\"status\":\"PAID\",\"timestamp\":\"2024-07-01T10:00:00\",\"vehicleId\":\"V123\",\"userId\":\"U123\"}}",
+							"header": [{"key": "Content-Type", "value": "application/json"}]
+						}
+					]
+				},
+				{
+					"name": "delete-payment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/payments/delete/1",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "8081",
+							"path": ["api", "v1", "payments", "delete", "1"]
+						}
+					},
+					"response": [
+						{
+							"code": 200,
+							"body": "{\"message\":\"Payment deleted successfully\"}",
+							"header": [{"key": "Content-Type", "value": "application/json"}]
+						}
+					]
+				},
+				{
+					"name": "generate-receipt",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":1,\"amount\":100.0}",
+							"options": {"raw": {"language": "json"}}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/payments/receipt",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "8081",
+							"path": ["api", "v1", "payments", "receipt"]
+						}
+					},
+					"response": [
+						{
+							"code": 200,
+							"body": "{\"message\":\"Receipt generated for payment ID: 1 with amount: 100.0\"}",
+							"header": [{"key": "Content-Type", "value": "application/json"}]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Parking-spaces",
+			"item": [
+				{
+					"name": "get-available",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/parking/available",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "8085",
+							"path": ["api", "parking", "available"]
+						}
+					},
+					"response": [
+						{
+							"code": 200,
+							"body": "[{\"id\":1,\"available\":true},{\"id\":2,\"available\":false}]",
+							"header": [{"key": "Content-Type", "value": "application/json"}]
+						}
+					]
+				},
+				{
+					"name": "add-parking",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":2,\"available\":true}",
+							"options": {"raw": {"language": "json"}}
+						},
+						"url": {
+							"raw": "http://localhost:8085/api/parking/add",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "8085",
+							"path": ["api", "parking", "add"]
+						}
+					},
+					"response": [
+						{
+							"code": 200,
+							"body": "{\"message\":\"Parking space added successfully\",\"parkingSpace\":{\"id\":2,\"available\":true}}",
+							"header": [{"key": "Content-Type", "value": "application/json"}]
+						}
+					]
+				},
+				{
+					"name": "update-parking",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"available\":false}",
+							"options": {"raw": {"language": "json"}}
+						},
+						"url": {
+							"raw": "http://localhost:8085/api/parking/update/2",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "8085",
+							"path": ["api", "parking", "update", "2"]
+						}
+					},
+					"response": [
+						{
+							"code": 200,
+							"body": "{\"message\":\"Parking space updated successfully\",\"parkingSpace\":{\"id\":2,\"available\":false}}",
+							"header": [{"key": "Content-Type", "value": "application/json"}]
+						}
+					]
+				},
+				{
+					"name": "delete-parking",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/parking/delete/2",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "8085",
+							"path": ["api", "parking", "delete", "2"]
+						}
+					},
+					"response": [
+						{
+							"code": 200,
+							"body": "{\"message\":\"Parking space deleted successfully\"}",
+							"header": [{"key": "Content-Type", "value": "application/json"}]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Vehicle-service",
+			"item": [
+				{
+					"name": "get-all-vehicles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/api/v1/vehicles/all",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "8082",
+							"path": ["api", "v1", "vehicles", "all"]
+						}
+					},
+					"response": [
+						{
+							"code": 200,
+							"body": "[{\"id\":1,\"number\":\"ABC-1234\",\"type\":\"Car\",\"userId\":\"U123\"}]",
+							"header": [{"key": "Content-Type", "value": "application/json"}]
+						}
+					]
+				},
+				{
+					"name": "register-vehicle",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"number\":\"XYZ-5678\",\"type\":\"Bike\",\"userId\":\"U124\"}",
+							"options": {"raw": {"language": "json"}}
+						},
+						"url": {
+							"raw": "http://localhost:8082/api/v1/vehicles/register",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "8082",
+							"path": ["api", "v1", "vehicles", "register"]
+						}
+					},
+					"response": [
+						{
+							"code": 200,
+							"body": "{\"message\":\"Vehicle registered successfully\",\"vehicle\":{\"id\":2,\"number\":\"XYZ-5678\",\"type\":\"Bike\",\"userId\":\"U124\"}}",
+							"header": [{"key": "Content-Type", "value": "application/json"}]
+						}
+					]
+				},
+				{
+					"name": "update-vehicle-exit",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"number\":\"XYZ-5678\",\"type\":\"Bike\",\"userId\":\"U124\"}",
+							"options": {"raw": {"language": "json"}}
+						},
+						"url": {
+							"raw": "http://localhost:8082/api/v1/vehicles/exit/2",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "8082",
+							"path": ["api", "v1", "vehicles", "exit", "2"]
+						}
+					},
+					"response": [
+						{
+							"code": 200,
+							"body": "{\"message\":\"Vehicle exit updated successfully\",\"vehicle\":{\"id\":2,\"number\":\"XYZ-5678\",\"type\":\"Bike\",\"userId\":\"U124\"}}",
+							"header": [{"key": "Content-Type", "value": "application/json"}]
+						}
+					]
+				},
+				{
+					"name": "delete-vehicle",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/api/v1/vehicles/delete/2",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "8082",
+							"path": ["api", "v1", "vehicles", "delete", "2"]
+						}
+					},
+					"response": [
+						{
+							"code": 200,
+							"body": "{\"message\":\"Vehicle deleted successfully\"}",
+							"header": [{"key": "Content-Type", "value": "application/json"}]
+						}
+					]
+				}
+			]
+		}
+	]
+}
